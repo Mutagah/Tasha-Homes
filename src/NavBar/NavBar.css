@@ -1,0 +1,23 @@
+.Navbar{
+    margin: 0;
+    height: 100px;
+    background-color: #acddfb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #tasha_home{
+    margin-top:-9px;
+    margin-left: 20px;
+    color: #000000;
+    font-weight: 900;
+    font-size: 50px;
+  }
+  .Navbar > .linkStyling a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5c607a;
+    font-size: x-large;
+    margin-right:20px ;
+  }
+  
