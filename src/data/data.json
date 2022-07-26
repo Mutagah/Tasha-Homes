@@ -1,9 +1,26 @@
 {
-    "housesdata": [
-      {
-        "id": 1,
-        "name": "Kihahu Mutaga",
-        "age":23
-      }
-    ]
-  }
+  "housesdata": [
+    {
+      "name": "Vanessa wanjiru Marsha",
+      "age": "23",
+      "phonenumber": "0712965910",
+      "typeofHouse": "Apartment",
+      "houseLocation": "Nairobi",
+      "numberOfRooms": "6 and more",
+      "numberOfBedrooms": "5",
+      "preferedViewDay": "saturday",
+      "id": 1
+    },
+    {
+      "name": "Kinyua Kihahu",
+      "age": "20",
+      "phonenumber": "058923154",
+      "typeofHouse": "Apartment",
+      "houseLocation": "Nakuru",
+      "numberOfRooms": "6 and more",
+      "numberOfBedrooms": "6 and more",
+      "preferedViewDay": "thursday",
+      "id": 2
+    }
+  ]
+}
