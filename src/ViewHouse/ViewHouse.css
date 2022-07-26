@@ -1,0 +1,15 @@
+.selectCriteria{
+    background-color: #2faef0;
+    display: flex;
+    padding: 25px;
+    font-size: x-large;
+}
+.selectCriteria > label
+{
+    justify-content: space-between;
+}
+.houseCard{
+    width: 200px;
+    height:30vh;
+    background-color: red;
+}
