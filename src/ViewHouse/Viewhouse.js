@@ -4,7 +4,7 @@ function Viewhouse(){
     return (<div>
         <div className="selectCriteria">
             <form>
-                <label>Filter by type of house
+                <label> Filter by type of house
                 <select>
                     <option value="Apartment">Apartment</option>
                     <option value="Bungalow">Bungalow</option>
@@ -20,7 +20,7 @@ function Viewhouse(){
                         <option value="Eldoret">Eldoret</option>
                     </select>
                 </label>
-                <label>Filter by number of Bedrooms
+                <label> Filter by number of Bedrooms  
                     <select>
                     <option value="1">1</option>
                     <option value="2">2</option>

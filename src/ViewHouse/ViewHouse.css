@@ -1,12 +1,25 @@
-.selectCriteria{
-    background-color: #2faef0;
+.selectCriteria 
+{   height: auto;
+    text-align: center;
+    width: auto;
+	border: 2px solid rgba(0, 0, 0, 0);
+	background-color: #2faef0;
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	/* margin-bottom: 200px; */
+	transition: .3s;
     display: flex;
-    padding: 25px;
-    font-size: x-large;
+    flex-direction: column;
 }
-.selectCriteria > label
-{
-    justify-content: space-between;
+.selectCriteria label{
+    padding-right: 20px; 
+}
+.selectCriteria select{
+    /* padding-right: 150px; */
+    margin-top: 25px;
+    text-align: center;
+    width: auto;
+    font-size: large;
 }
 .houseCard{
     width: 200px;
