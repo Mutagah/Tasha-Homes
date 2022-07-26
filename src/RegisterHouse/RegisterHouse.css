@@ -1,5 +1,19 @@
 .registerhouse{
-    margin-top: 20px;
-    text-align: center;
+    width: auto;
+    height: 100vh;
+    background: #004d8b;
+}
 
+.registerhouse h2{
+    text-align: center;
+}
+
+.registerhouse .registerHouseA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    width: auto;
+    min-height: 10vh;
 }
