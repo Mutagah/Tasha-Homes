@@ -7,6 +7,9 @@ import Viewhouse from "./ViewHouse/Viewhouse"
 import Registerhouse from './RegisterHouse/Registerhouse';
 function App() {
   const[houseInfo, sethouseInfo] = useState([])
+  const [housetype, setHouseType] = useState ("All")
+  const [houseLocation , setHouseLocation] = useState("All place")
+  const [numberOfBedrooms, setNumberofBedrooms] = useState ("Any")
 useEffect(()=>
 {
     fetch("http://localhost:5000/housesdata")
@@ -17,6 +20,31 @@ function addingHouse(newHouse)
 {
   sethouseInfo([...houseInfo,newHouse])
 }
+function handleChangeByHouseType(event){
+setHouseType(event.target.value)
+}
+function handleChangeByHouseLocation(event)
+{
+  setHouseLocation(event.target.value)
+}
+function handleChangeByNumberofBedrooms(event)
+{
+  setNumberofBedrooms(event.target.value)
+}
+const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || housetype === item.typeofHouse)
+{
+  return true
+}}).filter((item)=> {
+  if(houseLocation === "All place" || houseLocation === item.houseLocation)
+  {
+    return true;
+  }
+}).filter((item)=> {
+  if(numberOfBedrooms === "Any" || numberOfBedrooms === item.numberOfBedrooms)
+  {
+    return true;
+  }
+})
 
   return (
     <div>
@@ -29,7 +57,7 @@ function addingHouse(newHouse)
           <Registerhouse onAddingHouse={addingHouse}/>
         </Route>
         <Route exact path="/viewhouse">
-          <Viewhouse houseInfo={houseInfo} />
+          <Viewhouse filteredHouses={filteredHouses} handleChangeByHouseType={handleChangeByHouseType} handleChangeByHouseLocation={handleChangeByHouseLocation} handleChangeByNumberofBedrooms={handleChangeByNumberofBedrooms} />
         </Route>
       </Switch>
     </div>
