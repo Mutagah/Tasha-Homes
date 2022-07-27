@@ -48,13 +48,10 @@ function Viewhouse({houseInfo}){
                 </label>
             </form>
             </div>
-        <div className="houseCard">
         <div class="row mt-2 g-1">
             {displayHouses}
             </div>
         </div>
-        </div>
-        
     )
 }
 export default Viewhouse;

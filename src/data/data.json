@@ -168,6 +168,30 @@
       "estimatedCost": "15,000,000",
       "pictureLink": "https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg",
       "id": 13
+    },
+    {
+      "name": "Ann Kinyua",
+      "age": "50",
+      "phonenumber": "0722222788",
+      "typeofHouse": "Mansion",
+      "houseLocation": "Eldoret",
+      "numberOfRooms": "6 and more",
+      "numberOfBedrooms": "6 and more",
+      "preferedViewDay": "saturday",
+      "pictureLink": "https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg",
+      "id": 14
+    },
+    {
+      "name": "Njoki Njure ",
+      "age": "64",
+      "phonenumber": "473874390",
+      "typeofHouse": "Mansion",
+      "houseLocation": "Nairobi",
+      "numberOfRooms": "6 and more",
+      "numberOfBedrooms": "2",
+      "preferedViewDay": "saturday",
+      "pictureLink": "https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg",
+      "id": 15
     }
   ]
 }

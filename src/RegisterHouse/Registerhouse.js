@@ -1,6 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import "./RegisterHouse.css";
-function Registerhouse({onAddingHouse,formData,setformData}){
+function Registerhouse({onAddingHouse}){
+    const [formData,setformData] = useState({
+        name:"",
+        age:"",
+        phonenumber:"",
+        typeofHouse: "Apartment",
+        houseLocation:"Nairobi",
+        numberOfRooms:"1",
+        numberOfBedrooms :"1",
+        preferedViewDay:"sunday",
+        pictureLink:"https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg"
+    })
     function handleChange(event){
         setformData({...formData,[event.target.name]: event.target.value})
     }
@@ -22,11 +33,10 @@ function Registerhouse({onAddingHouse,formData,setformData}){
         numberOfRooms:formData.numberOfRooms,
         numberOfBedrooms :formData.numberOfBedrooms,
         preferedViewDay:formData.preferedViewDay,
-        pictureLink : formData.pictureLink,
-        estimatedCost:formData.estimatedCost
+        pictureLink : formData.pictureLink
     })
     }).then((response)=> response.json())
-    .then((data)=> onAddingHouse(data))
+    .then((newHouse)=> onAddingHouse(newHouse))
     }
     console.log(formData);
 return (
@@ -90,7 +100,7 @@ return (
                                 <option value="saturday">Saturday</option>
                             </select>
                             </label>
-                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost" value={formData.estimatedCost}/> 
+                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost"/> 
                             <input type="text" name="pictureLink" onChange={handleChange} className="field" placeholder="Copy link of a picture of the house" value={formData.pictureLink}/>
                             <input type="submit" className="registerbtn"/>
                     </form>
