@@ -1,7 +1,21 @@
 import React from "react";
 import "./ViewHouse.css"
-function Viewhouse({formData}){
-    const displayImages = formData.map((element))
+function Viewhouse({houseInfo}){
+    const displayHouses = houseInfo.map((element)=>
+    {return( 
+        <div class="col-md-3">
+            <div class="card p-2">
+                <div class="text-right"> <small>{element.typeofHouse}</small> </div>
+                <div class="text-center mt-2 p-3"> <img src={element.pictureLink} width="450" height="300"/> <span class="d-block font-weight-bold">{element.houseLocation}</span>
+                    <hr/> <span>{element.name}</span>
+                    <div class="d-flex flex-row align-items-center justify-content-center"> <i class="fa fa-map-marker"></i> <small class="ml-1">{element.phonenumber}</small> </div>
+                    <div class="d-flex justify-content-between mt-3"> <span>$34,000</span> <button class="btn btn-sm btn-outline-dark">Delete</button> </div>
+                </div>
+            </div>
+
+        </div>
+
+    )})
     return (<div>
         <div className="selectCriteria">
             <form>
@@ -34,7 +48,11 @@ function Viewhouse({formData}){
             </form>
             </div>
         <div className="houseCard">
-        <div class="col-md-3">
+        <div class="row mt-2 g-1">
+            {displayHouses}
+            </div>
+            
+        {/* <div class="col-md-3">
             <div class="card p-2">
                 <div class="text-right"> <small>Full Time</small> </div>
                 <div class="text-center mt-2 p-3"> <img src="https://www.pinoyeplans.com/wp-content/uploads/2019/08/1-storey-house-12.jpg" width="450" /> <span class="d-block font-weight-bold">UX Designer</span>
@@ -44,7 +62,7 @@ function Viewhouse({formData}){
                 </div>
             </div>
 
-        </div>
+        </div> */}
         </div>
         </div>
         
