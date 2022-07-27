@@ -143,6 +143,18 @@
       "preferedViewDay": "monday",
       "pictureLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE2Zf8z7l7M1i8i_VP1YCYn8XbcDu61BJcUw&usqp=CAU",
       "id": 12
+    },
+    {
+      "name": "Abzed",
+      "age": "36",
+      "phonenumber": "763788988",
+      "typeofHouse": "Bungalow",
+      "houseLocation": "Mombasa",
+      "numberOfRooms": "1",
+      "numberOfBedrooms": "1",
+      "preferedViewDay": "sunday",
+      "pictureLink": "https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg",
+      "id": 13
     }
   ]
 }

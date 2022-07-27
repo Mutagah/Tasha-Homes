@@ -19,11 +19,11 @@ function App() {
     pictureLink:"https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg"
 })
 useEffect(()=>
-    {
-        fetch("http://localhost:5000/housesdata")
-        .then((response)=> response.json())
-        .then((data)=>sethouseInfo(data))
-    },[])
+{
+    fetch("http://localhost:5000/housesdata")
+    .then((response)=> response.json())
+    .then((data)=>sethouseInfo(data))
+},[])
 
   return (
     <div>

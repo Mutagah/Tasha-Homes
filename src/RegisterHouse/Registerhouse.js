@@ -88,6 +88,7 @@ return (
                                 <option value="saturday">Saturday</option>
                             </select>
                             </label>
+                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost"/> 
                             <input type="text" name="pictureLink" onChange={handleChange} className="field" placeholder="Copy link of a picture of the house" value={formData.pictureLink}/>
                             <input type="submit" className="registerbtn"/>
                     </form>
