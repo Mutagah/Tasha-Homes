@@ -1,6 +1,6 @@
 import React from "react";
 import "./RegisterHouse.css";
-function Registerhouse({formData,setformData}){
+function Registerhouse({onAddingHouse,formData,setformData}){
     function handleChange(event){
         setformData({...formData,[event.target.name]: event.target.value})
     }
@@ -22,9 +22,11 @@ function Registerhouse({formData,setformData}){
         numberOfRooms:formData.numberOfRooms,
         numberOfBedrooms :formData.numberOfBedrooms,
         preferedViewDay:formData.preferedViewDay,
-        pictureLink : formData.pictureLink
+        pictureLink : formData.pictureLink,
+        estimatedCost:formData.estimatedCost
     })
-    })
+    }).then((response)=> response.json())
+    .then((data)=> onAddingHouse(data))
     }
     console.log(formData);
 return (
@@ -88,7 +90,7 @@ return (
                                 <option value="saturday">Saturday</option>
                             </select>
                             </label>
-                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost"/> 
+                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost" value={formData.estimatedCost}/> 
                             <input type="text" name="pictureLink" onChange={handleChange} className="field" placeholder="Copy link of a picture of the house" value={formData.pictureLink}/>
                             <input type="submit" className="registerbtn"/>
                     </form>

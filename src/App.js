@@ -15,6 +15,7 @@ function App() {
     houseLocation:"Nairobi",
     numberOfRooms:"1",
     numberOfBedrooms :"1",
+    estimatedCost :"",
     preferedViewDay:"sunday",
     pictureLink:"https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg"
 })
@@ -24,7 +25,10 @@ useEffect(()=>
     .then((response)=> response.json())
     .then((data)=>sethouseInfo(data))
 },[])
-
+function handleaddingHouse(newHouse)
+{
+  setformData([...formData,newHouse])
+}
   return (
     <div>
       <NavBar />
@@ -33,7 +37,7 @@ useEffect(()=>
           <About />
         </Route >
         <Route exact path="/registerhouse">
-          <Registerhouse formData={formData} setformData={setformData}/>
+          <Registerhouse onAddingHouse={handleaddingHouse}formData={formData} setformData={setformData}/>
         </Route>
         <Route exact path="/viewhouse">
           <Viewhouse houseInfo={houseInfo} />
