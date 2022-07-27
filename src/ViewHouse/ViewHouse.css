@@ -11,18 +11,22 @@
     display: flex;
     flex-direction: column;
 }
+
+.selectCriteria form{
+    display: flex;
+    justify-content: space-evenly;
+}
 .selectCriteria label{
     padding-right: 20px; 
+    justify-content: space-evenly;
 }
 .selectCriteria select{
     /* padding-right: 150px; */
+    /* margin-left: ; */
     margin-top: 25px;
     text-align: center;
     width: auto;
     font-size: large;
 }
-.houseCard{
-    width: 200px;
-    height:30vh;
-    background-color: red;
-}
+
+

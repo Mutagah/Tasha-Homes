@@ -1,22 +1,12 @@
-import React,{useState} from "react";
+import React from "react";
 import "./RegisterHouse.css";
-function Registerhouse(){
-    const [formData,setformData] = useState({
-        name:"",
-        age:"",
-        phonenumber:"000-000-000",
-        typeofHouse: "Apartment",
-        houseLocation:"Nairobi",
-        numberOfRooms:"1",
-        numberOfBedrooms :"1",
-        preferedViewDay:"sunday",
-    })
+function Registerhouse({formData,setformData}){
     function handleChange(event){
         setformData({...formData,[event.target.name]: event.target.value})
     }
     console.log(formData)
-    function handleSubmit(e){
-        e.preventDefault()
+    function handleSubmit(event){
+        event.preventDefault()
         fetch("http://localhost:5000/housesdata",{
       method : "POST",
       headers : {
@@ -26,17 +16,17 @@ function Registerhouse(){
       {
         name : formData.name,
         age:formData.age,
-        phonenumber:formData.number,
+        phonenumber:formData.phonenumber,
         typeofHouse: formData.typeofHouse,
         houseLocation:formData.houseLocation,
         numberOfRooms:formData.numberOfRooms,
         numberOfBedrooms :formData.numberOfBedrooms,
         preferedViewDay:formData.preferedViewDay,
-})
-      
+        pictureLink : formData.pictureLink
     })
-    console.log(formData);
+    })
     }
+    console.log(formData);
 return (
 <div>
     <section className="registerHouse" >
@@ -48,9 +38,9 @@ return (
                              <h2>Register with Us</h2>
                              <input type="text" onChange={handleChange}className="field" placeholder="Your Name" name="name" value={formData.name}/>
                              <input type="text" onChange={handleChange} className="field" placeholder="Your Age" name="age" value={formData.age}/>
-                             <input type="tel" onChange={handleChange} className="field" placeholder="Phone Number" name="number" value={formData.number} />
+                             <input type="tel" onChange={handleChange} className="field" placeholder="Phone Number" name="phonenumber" value={formData.phonenumber} />
                              <label>Type of House
-                             <select onChange={handleChange} name="typeOfHouse">
+                             <select onChange={handleChange} name="typeofHouse">
                                 <option value="Apartment">Apartment</option>
                                 <option value="Bungalow">Bungalow</option>
                                 <option value="Mansion">Mansion</option>
@@ -98,6 +88,7 @@ return (
                                 <option value="saturday">Saturday</option>
                             </select>
                             </label>
+                            <input type="text" name="pictureLink" onChange={handleChange} className="field" placeholder="Copy link of a picture of the house" value={formData.pictureLink}/>
                             <input type="submit" className="registerbtn"/>
                     </form>
                 </div>
