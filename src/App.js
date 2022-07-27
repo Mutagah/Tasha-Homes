@@ -31,6 +31,10 @@ function handleChangeByNumberofBedrooms(event)
 {
   setNumberofBedrooms(event.target.value)
 }
+function handleClick()
+{
+  console.log("awaiting function")
+}
 const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || housetype === item.typeofHouse)
 {
   return true
@@ -57,7 +61,9 @@ const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || hou
           <Registerhouse onAddingHouse={addingHouse}/>
         </Route>
         <Route exact path="/viewhouse">
-          <Viewhouse filteredHouses={filteredHouses} handleChangeByHouseType={handleChangeByHouseType} handleChangeByHouseLocation={handleChangeByHouseLocation} handleChangeByNumberofBedrooms={handleChangeByNumberofBedrooms} />
+          <Viewhouse filteredHouses={filteredHouses}
+           handleChangeByHouseType={handleChangeByHouseType} handleChangeByHouseLocation={handleChangeByHouseLocation} handleChangeByNumberofBedrooms={handleChangeByNumberofBedrooms} 
+           handleClick={handleClick}/>
         </Route>
       </Switch>
     </div>
