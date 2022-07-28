@@ -10,7 +10,7 @@ function Registerhouse({onAddingHouse}){
         numberOfRooms:"1",
         numberOfBedrooms :"1",
         preferedViewDay:"sunday",
-        pictureLink:"https://www.designyourway.net/diverse/luxurioushouses/Armada-House1.jpg"
+        pictureLink:"https://media.istockphoto.com/photos/evening-view-of-a-modern-large-house-with-swimming-pool-picture-id1151832961?k=20&m=1151832961&s=612x612&w=0&h=srMuULiXVtHDUskK7PTvBnxvuRHV3r0jQs1gWGh3aeI="
     })
     function handleChange(event){
         setformData({...formData,[event.target.name]: event.target.value})
@@ -32,13 +32,15 @@ function Registerhouse({onAddingHouse}){
         houseLocation:formData.houseLocation,
         numberOfRooms:formData.numberOfRooms,
         numberOfBedrooms :formData.numberOfBedrooms,
+        estimatedCost:formData.estimatedCost,
         preferedViewDay:formData.preferedViewDay,
         pictureLink : formData.pictureLink
     })
     }).then((response)=> response.json())
     .then((newHouse)=> onAddingHouse(newHouse))
+    setformData("")
     }
-    console.log(formData);
+    
 return (
 <div>
     <section className="registerHouse" >
@@ -100,7 +102,7 @@ return (
                                 <option value="saturday">Saturday</option>
                             </select>
                             </label>
-                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost"/> 
+                            <input type="text" name="estimatedCost" onChange={handleChange} className="field" placeholder="Estimated Cost" value={formData.estimatedCost}/> 
                             <input type="text" name="pictureLink" onChange={handleChange} className="field" placeholder="Copy link of a picture of the house" value={formData.pictureLink}/>
                             <input type="submit" className="registerbtn"/>
                     </form>
