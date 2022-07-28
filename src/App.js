@@ -31,9 +31,17 @@ function handleChangeByNumberofBedrooms(event)
 {
   setNumberofBedrooms(event.target.value)
 }
-function handleClick()
+function handleClick(houseId)
 {
-  console.log("awaiting function")
+  fetch(`http://localhost:5000/housesdata/${houseId}`,{
+    method : "DELETE",
+  }).then((response)=> response.json())
+  .then((data)=> console.log(data))
+  const updatedHouseInfo = houseInfo.filter((item)=>
+  {
+   return(item.id !== houseId) 
+  })
+  sethouseInfo(updatedHouseInfo)
 }
 const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || housetype === item.typeofHouse)
 {
