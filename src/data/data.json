@@ -51,6 +51,19 @@
       "preferedViewDay": "friday",
       "pictureLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgc36S9C9nTaarjEdN9whFjPH-SEq_QLt9HQ&usqp=CAU",
       "id": 4
+    },
+    {
+      "name": "Ann Kinyua",
+      "age": "50",
+      "phonenumber": "0722222788",
+      "typeofHouse": "Apartment",
+      "houseLocation": "Nairobi",
+      "numberOfRooms": "6 and more",
+      "numberOfBedrooms": "3",
+      "estimatedCost": "20000000",
+      "preferedViewDay": "saturday",
+      "pictureLink": "https://media.gettyimages.com/photos/large-multicondos-building-blocks-with-bicycles-lane-picture-id1174752803?s=170667a",
+      "id": 5
     }
   ]
 }

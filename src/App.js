@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './NavBar/NavBar';
 import {Route,Switch} from "react-router-dom"
 import About from "./About/About"
+import Contacts from './Contacts/Contacts';
 import Viewhouse from "./ViewHouse/Viewhouse"
 import Registerhouse from './RegisterHouse/Registerhouse';
 function App() {
@@ -74,6 +75,7 @@ const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || hou
            handleClick={handleClick}/>
         </Route>
       </Switch>
+      <Contacts />
     </div>
   );
 }
