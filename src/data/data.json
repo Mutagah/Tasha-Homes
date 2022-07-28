@@ -92,19 +92,6 @@
       "id": 7
     },
     {
-      "name": "Victor Opiyo",
-      "age": "25",
-      "phonenumber": "5678583145",
-      "typeofHouse": "Mansion",
-      "houseLocation": "Nakuru",
-      "numberOfRooms": "6 and more",
-      "numberOfBedrooms": "4",
-      "estimatedCost": "65047999",
-      "preferedViewDay": "friday",
-      "pictureLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLkUjUzA2ylXP79KkN_scDTxWM4dIrz9xhaA&usqp=CAU",
-      "id": 8
-    },
-    {
       "name": "Donald Brooks",
       "age": "23",
       "phonenumber": "456795256",
