@@ -12,19 +12,19 @@
 
 ## Project Setup Instructions: 
 
-1. Install json server to your machine and ensure it is done globally
+1. ###  Install json server to your machine and ensure it is done globally
 
-2. Clone the project to your local machine and on successful cloning, change the directory to the cloned folder says-my-vertinary.>>
+2. ###  Clone the project to your local machine and on successful cloning, change the directory to the cloned folder says-my-vertinary.>>
                       `cd Tasha-Homes`<<
 
 
-3. Launch json live server from the `Tasha-Homes` directory and watch the data.json file >>
+3. ###  Launch json live server from the `Tasha-Homes` directory and watch the data.json file >>
                    ` json-server --watch --port 5000 src/data/data.json`<<
 
         - A successful resource >> `http://localhost:5000/housesdata` << should be created that allows you to `GET` and `POST` data upon clicking the ` submit` button under the register house Component
 
 
-4.  The web page project is now readily available for interaction
+4.  ###  The web page project is now readily available for interaction
 
 5.  ### Run `npm start` from a new terminal in the same directory of your cloned application will run the application on a browser.
 
