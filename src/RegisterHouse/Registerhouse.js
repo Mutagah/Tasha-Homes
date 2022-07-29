@@ -1,6 +1,7 @@
-import React,{useState} from "react";
+import React,{useRef, useState} from "react";
 import "./RegisterHouse.css";
 function Registerhouse({onAddingHouse}){
+    const form = useRef()
     const [formData,setformData] = useState({
         name:"",
         age:"",
@@ -15,7 +16,6 @@ function Registerhouse({onAddingHouse}){
     function handleChange(event){
         setformData({...formData,[event.target.name]: event.target.value})
     }
-    console.log(formData)
     function handleSubmit(event){
         event.preventDefault()
         fetch("https://tasha-homes-api.herokuapp.com/housesdata",{
@@ -38,7 +38,7 @@ function Registerhouse({onAddingHouse}){
     })
     }).then((response)=> response.json())
     .then((newHouse)=> onAddingHouse(newHouse))
-    setformData("")
+    form.reset();
     }
     
 return (
@@ -48,7 +48,7 @@ return (
             <div className="register-box">
                 <div className="left"></div>
                     <div className="right">
-                        <form onSubmit={handleSubmit}> 
+                        <form className="myForm" ref={form} onSubmit={handleSubmit}> 
                              <h2>Register with Us</h2>
                              <input type="text" onChange={handleChange}className="field" placeholder="Your Name" name="name" value={formData.name}/>
                              <input type="text" onChange={handleChange} className="field" placeholder="Your Age" name="age" value={formData.age}/>
