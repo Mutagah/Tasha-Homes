@@ -51,40 +51,66 @@ margin-top: 200px;
     height: 500px;
     width: 885px
 }
-/* @media screen and (max-width: 560px) {
-    .containerA1{
-        width: 20%;
-    } */
-
-    /* .contents {
+@media screen and (max-width: 792px) {
+.containerA{
+        margin-left: -20px;
+        display:flex;
+        position: relative;
+        width: 100%;
         flex-direction: column;
-        width:auto;
-    }
-.myForm{
-    flex-direction: column;
-    margin-top: 20px;
-        width : 500px;
-        height : 350px;
-        margin-left: 40px;
-    }
-.content1{
-    width:auto;
-    flex-direction: column;
-    margin-left: 50px;
-}  
-.myTable{
-    display: none;
-  }
-.vetList{
-    margin-top: 0px;
-  }
-#myImages img {
-   display:none
+    } 
+.containerA1 img
+{
+    width: 400px;
+    height: 300px;
 }
-.like-glyph2{
-    position: absolute;
-    font-size: 50px;
-    margin-left : -630px;
-    margin-top: -80px;
-} */
-/* } */
+.containerA2{
+    margin-top: -300px;
+    margin-left: 420px;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    color: #2faef0;
+    align-items: center;
+    width: 48%;
+    height: 400px;
+    background-color: transparent;
+}
+.containerA2 > h2
+{
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.containerB{
+    position: relative;
+    margin-left: -5px;
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+} 
+.containerB1{
+    text-align: center;
+    justify-content: center;
+    color: #2faef0;
+    align-items: center;
+    width: 48%;
+    height: 400px;
+    background-color: transparent;
+    }
+.containerB1 > h2
+{
+padding-top:20px;
+margin-top: 120px;
+justify-content: center;
+align-items: center;
+}
+.containerB2 img
+{
+width: 372px;
+height: 300px;
+margin-top: -200px;
+margin-left: 420px;
+}
+}
+

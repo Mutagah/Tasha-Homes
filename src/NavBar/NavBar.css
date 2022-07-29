@@ -1,5 +1,6 @@
 .Navbar{
     margin: 0;
+    width: auto;
     height: 100px;
     background-color: #acddfb;
     display: flex;
@@ -20,4 +21,18 @@
     font-size: x-large;
     margin-right:20px ;
   }
-  
+@media screen and (max-width:792px){
+.Navbar{
+  display:flex;
+  flex-direction: column;
+  width: auto;
+  height: 75px;
+}
+#tasha_home{
+  font-size: 40px;
+}
+.Navbar > .linkStyling a{
+  font-size: large;
+}
+
+}
