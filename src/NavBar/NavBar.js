@@ -16,6 +16,7 @@ function NavBar(){
         <NavLink to="/viewhouse">
             View House
         </NavLink>
+        
         </div>
     </div>
 )

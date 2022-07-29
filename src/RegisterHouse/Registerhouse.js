@@ -18,7 +18,7 @@ function Registerhouse({onAddingHouse}){
     console.log(formData)
     function handleSubmit(event){
         event.preventDefault()
-        fetch("http://localhost:5000/housesdata",{
+        fetch("https://tasha-homes-api.herokuapp.com/housesdata",{
       method : "POST",
       headers : {
         "Content-Type" : "application/json"

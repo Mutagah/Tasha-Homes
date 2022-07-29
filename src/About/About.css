@@ -27,28 +27,64 @@
     margin-top: 200px;
 }
 .containerB{
-    display: flex;
     margin-top: 25px;
     margin-right: 30px;
     margin-left: 30px;
-    height: 53vh;
+    display: flex;
     justify-content: space-between;
+    height: 53vh;
 }
 .containerB1{
     border-radius: 30px;
     background-color: #2faef0;
-    width: 900px;
+    width: 48.7%;
     text-align: center;
 }
 .containerB1 > h2{
 margin-top: 200px;
 }
 .containerB2{
-    background-color: green;
     width:48%;
-    height: 500px;
+    display: flex;
 }
 .containerB2 > img{
     height: 500px;
     width: 885px
 }
+/* @media screen and (max-width: 560px) {
+    .containerA1{
+        width: 20%;
+    } */
+
+    /* .contents {
+        flex-direction: column;
+        width:auto;
+    }
+.myForm{
+    flex-direction: column;
+    margin-top: 20px;
+        width : 500px;
+        height : 350px;
+        margin-left: 40px;
+    }
+.content1{
+    width:auto;
+    flex-direction: column;
+    margin-left: 50px;
+}  
+.myTable{
+    display: none;
+  }
+.vetList{
+    margin-top: 0px;
+  }
+#myImages img {
+   display:none
+}
+.like-glyph2{
+    position: absolute;
+    font-size: 50px;
+    margin-left : -630px;
+    margin-top: -80px;
+} */
+/* } */

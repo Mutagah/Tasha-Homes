@@ -13,7 +13,7 @@ function App() {
   const [numberOfBedrooms, setNumberofBedrooms] = useState ("Any")
 useEffect(()=>
 {
-    fetch("http://localhost:5000/housesdata")
+    fetch("https://tasha-homes-api.herokuapp.com/housesdata")
     .then((response)=> response.json())
     .then((data)=>sethouseInfo(data))
 },[])
@@ -34,7 +34,7 @@ function handleChangeByNumberofBedrooms(event)
 }
 function handleClick(houseId)
 {
-  fetch(`http://localhost:5000/housesdata/${houseId}`,{
+  fetch(`https://tasha-homes-api.herokuapp.com/housesdata/${houseId}`,{
     method : "DELETE",
   }).then((response)=> response.json())
   .then((data)=> console.log(data))
