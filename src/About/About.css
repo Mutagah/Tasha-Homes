@@ -1,116 +1,234 @@
+.mainContainer{
+    padding: 40px;
+}
 .containerA{
-    margin-top: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width:100%;
     display: flex;
     justify-content: space-between;
-    height: 53vh;
 }
 .containerA1{
-    width: 47.6%;
+    width: 50%;
+    margin-right: 20px;
+    
 }
 .containerA1 img
 {
-    width: 900px;
-    height: 500px;
+    width:100%;
+    border-radius: 10px;
 }
 .containerA2{
-    border-radius: 30px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 20px;
     color: aliceblue;
-    width: 48%;
-    margin-top: 0px;
+    width: 50%;
     background-color: #004d8b;
     
 }
-.containerA2 > h2{
-    margin-top: 200px;
-}
+
 .containerB{
     margin-top: 25px;
-    margin-right: 30px;
-    margin-left: 30px;
+    width:100%;
     display: flex;
     justify-content: space-between;
-    height: 53vh;
 }
 .containerB1{
-    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding:0 20px;
+    color: aliceblue;
+    width: 50%;
+    margin-right: 20px;
     background-color: #2faef0;
-    width: 48.7%;
-    text-align: center;
-}
-.containerB1 > h2{
-margin-top: 200px;
 }
 .containerB2{
-    width:48%;
-    display: flex;
+    width: 50%;
 }
 .containerB2 > img{
-    height: 500px;
-    width: 885px
+    width:100%;
+    border-radius: 10px;
 }
-@media screen and (max-width: 792px) {
+@media only screen and (max-width: 896px) {
 .containerA{
-        margin-left: -20px;
-        display:flex;
-        position: relative;
-        width: 100%;
-        flex-direction: column;
-    } 
-.containerA1 img
-{
-    width: 400px;
-    height: 300px;
-}
-.containerA2{
-    margin-top: -300px;
-    margin-left: 420px;
-    border-radius: 30px;
-    text-align: center;
-    justify-content: center;
-    color: #2faef0;
-    align-items: center;
-    width: 48%;
-    height: 400px;
-    background-color: transparent;
-}
-.containerA2 > h2
-{
-    margin-top: 90px;
-    justify-content: center;
-    align-items: center;
-}
-.containerB{
-    position: relative;
-    margin-left: -5px;
-    display:flex;
-    width: 100%;
-    flex-direction: column;
-} 
-.containerB1{
-    text-align: center;
-    justify-content: center;
-    color: #2faef0;
-    align-items: center;
-    width: 48%;
-    height: 400px;
-    background-color: transparent;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
     }
-.containerB1 > h2
-{
-padding-top:20px;
-margin-top: 120px;
-justify-content: center;
-align-items: center;
+    .containerA1{
+        width: 50%;
+        margin-right: 20px;
+        
+    }
+    .containerA1 img
+    {
+        width:100%;
+        border-radius: 10px;
+    }
+    .containerA2{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 20px;
+        color: aliceblue;
+        width: 50%;
+        background-color: #004d8b;
+        
+    }
+    .containerA2 > h2{
+        font-size: x-large;
+    }
+    
+    .containerB{
+        margin-top: 25px;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .containerB1{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 20px;
+        color: aliceblue;
+        width: 50%;
+        margin-right: 20px;
+        background-color: #2faef0;
+    }
+    .containerB1 > h2{
+        font-size: x-large;
+    }
+    .containerB2{
+        width: 50%;
+    }
+    .containerB2 > img{
+        width:100%;
+        border-radius: 10px;
+    }
 }
-.containerB2 img
-{
-width: 372px;
-height: 300px;
-margin-top: -200px;
-margin-left: 420px;
+@media only screen and (max-width: 768px) {
+    .containerA{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .containerA1{
+        width: 50%;
+        margin-right: 20px;
+        
+    }
+    .containerA1 img
+    {
+        width:100%;
+        border-radius: 10px;
+    }
+    .containerA2{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 20px;
+        color: aliceblue;
+        width: 50%;
+        background-color: #004d8b;
+        
+    }
+    .containerA2 > h2{
+        font-size: large;
+    }
+    
+    .containerB{
+        margin-top: 25px;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .containerB1{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 20px;
+        color: aliceblue;
+        width: 50%;
+        margin-right: 20px;
+        background-color: #2faef0;
+    }
+    .containerB1 > h2{
+        font-size: large;
+    }
+    .containerB2{
+        width: 50%;
+    }
+    .containerB2 > img{
+        width:100%;
+        border-radius: 10px;
+    }
 }
-}
+@media only screen and (max-width: 640px) {
 
+    .containerA2 > h2{
+            font-size: large;
+    }
+    .containerB1 > h2{
+        font-size: large;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .containerA{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .containerA1{
+        width: 50%;
+        margin-right: 20px;
+        
+    }
+    .containerA1 img
+    {
+        width:100%;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .containerA2{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 20px;
+        color: aliceblue;
+        width: 50%;
+        background-color: #004d8b;
+        
+    }
+    .containerA2 > h2{
+        font-size: xx-small;
+    } 
+
+    .containerB{
+        margin-top: 25px;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .containerB1{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 20px;
+        color: aliceblue;
+        width: 50%;
+        margin-right: 20px;
+        background-color: #2faef0;
+    }
+    .containerB1 > h2{
+        font-size: xx-small;
+    }
+    .containerB2{
+        width: 50%;
+    }
+    .containerB2 > img{
+        width:100%;
+        height: 100px;
+        border-radius: 10px;
+    }
+  }
