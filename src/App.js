@@ -32,18 +32,18 @@ function handleChangeByNumberofBedrooms(event)
 {
   setNumberofBedrooms(event.target.value)
 }
-function handleClick(houseId)
-{
-  fetch(`https://tasha-homes-api.herokuapp.com/housesdata/${houseId}`,{
-    method : "DELETE",
-  }).then((response)=> response.json())
-  .then((data)=> console.log(data))
-  const updatedHouseInfo = houseInfo.filter((item)=>
-  {
-   return(item.id !== houseId) 
-  })
-  sethouseInfo(updatedHouseInfo)
-}
+// function handleClick(houseId)
+// {
+//   fetch(`https://tasha-homes-api.herokuapp.com/housesdata/${houseId}`,{
+//     method : "DELETE",
+//   }).then((response)=> response.json())
+//   .then((data)=> console.log(data))
+//   const updatedHouseInfo = houseInfo.filter((item)=>
+//   {
+//    return(item.id !== houseId) 
+//   })
+//   sethouseInfo(updatedHouseInfo)
+// }
 const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || housetype === item.typeofHouse)
 {
   return true
@@ -72,7 +72,7 @@ const filteredHouses = houseInfo.filter((item)=> {if (housetype === "All" || hou
         <Route exact path="/viewhouse">
           <Viewhouse filteredHouses={filteredHouses}
            handleChangeByHouseType={handleChangeByHouseType} handleChangeByHouseLocation={handleChangeByHouseLocation} handleChangeByNumberofBedrooms={handleChangeByNumberofBedrooms} 
-           handleClick={handleClick}/>
+          />
         </Route>
       </Switch>
       <Contacts />
