@@ -13,9 +13,9 @@ function App() {
   const [numberOfBedrooms, setNumberofBedrooms] = useState ("Any")
 useEffect(()=>
 {
-    fetch("https://tasha-homes-api.herokuapp.com/housesdata")
-    .then((response)=> response.json())
-    .then((data)=>sethouseInfo(data))
+    fetch("https://tasha-homes-api.onrender.com/housesdata")
+      .then((response) => response.json())
+      .then((data) => sethouseInfo(data));
 },[])
 function addingHouse(newHouse)
 {
